@@ -1,0 +1,2299 @@
+[
+  {
+    "id": "scope-manifest",
+    "path": "context/scope.json",
+    "dimensions": [
+      "scope"
+    ],
+    "description": "Repository revision and selected-file manifest with pull request metadata.",
+    "written_for_engagement": false,
+    "level": "engagement",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/scope.json",
+        "location": "codebases[0]: commit_sha, in_scope_files, directory and pull_request revision fields"
+      }
+    ]
+  },
+  {
+    "id": "pull-request-context",
+    "path": "context/scope.json",
+    "dimensions": [],
+    "description": "Developer-written title and description of pull request #563; background context.",
+    "written_for_engagement": false,
+    "level": "engagement",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/scope.json",
+        "location": "codebases[0].pull_request.title and codebases[0].pull_request.description"
+      }
+    ]
+  },
+  {
+    "id": "statements",
+    "path": "context/statements.json",
+    "dimensions": [
+      "tf",
+      "scope",
+      "known"
+    ],
+    "description": "Statement IDs, exact quotations, source lines and per-dimension levels.",
+    "written_for_engagement": false,
+    "level": "engagement",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/statements.json",
+        "location": "version and files[].statements[]"
+      }
+    ]
+  },
+  {
+    "id": "judging-guidelines",
+    "path": "context/judging-guidelines.md",
+    "dimensions": [
+      "tf",
+      "scope",
+      "known",
+      "severity"
+    ],
+    "description": "Selected Sherlock judging guidelines, duplication rules, mechanics and glossary.",
+    "written_for_engagement": false,
+    "level": "platform",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/judging-guidelines.md",
+        "location": "Sections 1–6"
+      }
+    ]
+  },
+  {
+    "id": "severity-set",
+    "path": "context/severity-set.json",
+    "dimensions": [
+      "severity"
+    ],
+    "description": "Ordered severity identifiers, display names and complete definitions.",
+    "written_for_engagement": false,
+    "level": "platform",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/severity-set.json",
+        "location": "All five array elements and body_markdown definitions"
+      }
+    ]
+  },
+  {
+    "id": "severity-reference",
+    "path": "context/severities.md",
+    "dimensions": [
+      "severity"
+    ],
+    "description": "Supplied severity reference with definitions, abbreviations and weights.",
+    "written_for_engagement": false,
+    "level": "platform",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/severities.md",
+        "location": "Complete document"
+      }
+    ]
+  },
+  {
+    "id": "finding-report-standard",
+    "path": "context/finding-report-standard.md",
+    "dimensions": [],
+    "description": "Platform guidance for writing the separate fields of a finding.",
+    "written_for_engagement": false,
+    "level": "platform",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/finding-report-standard.md",
+        "location": "Complete document"
+      }
+    ]
+  },
+  {
+    "id": "scope-rule-uniswap__v4-periphery",
+    "path": "context/scope-rules/uniswap__v4-periphery.md",
+    "dimensions": [
+      "scope"
+    ],
+    "description": "Sherlock pull request scope rule for uniswap__v4-periphery.",
+    "written_for_engagement": false,
+    "level": "platform",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/scope-rules/uniswap__v4-periphery.md",
+        "location": "Complete document"
+      }
+    ]
+  },
+  {
+    "id": "attachment-01",
+    "path": "context/Uniswap_Context_File.md",
+    "dimensions": [
+      "tf",
+      "scope",
+      "known"
+    ],
+    "description": "Engagement protocol document covering architecture, trust, environment, disclosures, fix status and test setup.",
+    "written_for_engagement": true,
+    "level": "engagement",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/Uniswap_Context_File.md",
+        "location": "Sections 1–7; statements S1–S107 in context/statements.json"
+      }
+    ]
+  },
+  {
+    "id": "attachment-02",
+    "path": "context/uniswap-v4-periphery__lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "New Alchemy OpenZeppelin audit (March 2017), repository-scan copy.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2017-03.md",
+        "location": "Lines 39, 74, 79, 93, 97, 102, 108, 114, 124, 156, 179, 200, 206, 223, 249, 255, 260–261, 272–273, 275–276, 281–282, 291; statement IDs S186, S187, S188, S189, S190, S191, S192, S193, S194, S195, S196, S197, S198, S199, S200, S201, S202, S203, S204, S205, S206"
+      }
+    ]
+  },
+  {
+    "id": "attachment-03",
+    "path": "context/uniswap-v4-periphery__lib-universal-router-audit-CLAUDE.md",
+    "dimensions": [],
+    "description": "Universal Router audit-directory guide and report list.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-universal-router-audit-CLAUDE.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/CLAUDE.md",
+        "location": "Complete repository document"
+      }
+    ]
+  },
+  {
+    "id": "attachment-04",
+    "path": "context/uniswap-v4-periphery__lib-universal-router-lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "New Alchemy OpenZeppelin audit (March 2017), repository-scan copy.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-universal-router-lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/openzeppelin-contracts/audit/2017-03.md",
+        "location": "Lines 39, 74, 79, 93, 97, 102, 108, 114, 124, 156, 179, 200, 206, 223, 255, 260–261, 272–273, 275–276, 281–282, 291; statement IDs S220, S221, S222, S223, S224, S225, S226, S227, S228, S229, S230, S231, S232, S233, S234, S235, S236, S237, S238, S239"
+      }
+    ]
+  },
+  {
+    "id": "attachment-05",
+    "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "New Alchemy OpenZeppelin audit (March 2017), repository-scan copy.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-permit2-lib-openzeppelin-contracts-audit-2017-03.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2017-03.md",
+        "location": "Lines 39, 74, 79, 93, 97, 102, 108, 114, 124, 134, 156, 174, 179, 200, 206, 223, 255, 260–261, 272–273, 275–276, 281–282; statement IDs S249, S250, S251, S252, S253, S254, S255, S256, S257, S258, S259, S260, S261, S262, S263, S264, S265, S266, S267, S268, S269"
+      }
+    ]
+  },
+  {
+    "id": "attachment-06",
+    "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-v4-core-lib-openzeppelin-contracts-audits-2017-03.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "New Alchemy OpenZeppelin audit (March 2017), repository-scan copy.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-v4-core-lib-openzeppelin-contracts-audits-2017-03.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2017-03.md",
+        "location": "Lines 39, 74, 79, 93, 97, 102, 108, 114, 124, 156, 179, 200, 206, 223, 255, 260–261, 272–273, 275–276, 281–282; statement IDs S273, S274, S275, S276, S277, S278, S279, S280, S281, S282, S283, S284, S285, S286, S287, S288, S289, S290, S291"
+      }
+    ]
+  },
+  {
+    "id": "attachment-07",
+    "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-v4-core-lib-openzeppelin-contracts-audits-README.md",
+    "dimensions": [],
+    "description": "OpenZeppelin audit and formal-verification report index.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-universal-router-lib-v4-periphery-lib-v4-core-lib-openzeppelin-contracts-audits-README.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/README.md",
+        "location": "Complete repository document"
+      }
+    ]
+  },
+  {
+    "id": "attachment-08",
+    "path": "context/uniswap-v4-periphery__lib-v3-core-audits-tob-README.md",
+    "dimensions": [],
+    "description": "Trail of Bits v3 verification-property documentation and tool instructions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-v3-core-audits-tob-README.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v3-core/audits/tob/README.md",
+        "location": "Complete repository document"
+      }
+    ]
+  },
+  {
+    "id": "attachment-09",
+    "path": "context/uniswap-v4-periphery__lib-v4-core-lib-openzeppelin-contracts-audits-2017-03.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "New Alchemy OpenZeppelin audit (March 2017), repository-scan copy.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-v4-core-lib-openzeppelin-contracts-audits-2017-03.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2017-03.md",
+        "location": "Lines 39, 74, 93, 97, 102, 108, 114, 124, 134, 156, 179, 194, 200, 206, 223, 255, 260–261, 272–273, 275–276, 281–282; statement IDs S300, S301, S302, S303, S304, S305, S306, S307, S308, S309, S310, S311, S312, S313, S314, S315, S316, S317, S318, S319"
+      }
+    ]
+  },
+  {
+    "id": "attachment-10",
+    "path": "context/uniswap-v4-periphery__lib-v4-core-lib-openzeppelin-contracts-audits-README.md",
+    "dimensions": [],
+    "description": "OpenZeppelin audit and formal-verification report index.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/uniswap-v4-periphery__lib-v4-core-lib-openzeppelin-contracts-audits-README.md",
+        "location": "Source attribution and complete document"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/README.md",
+        "location": "Complete repository document"
+      }
+    ]
+  },
+  {
+    "id": "pdf-01",
+    "path": "context/derived/uniswap__v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: v4 Periphery and Universal Router (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–45"
+      }
+    ]
+  },
+  {
+    "id": "pdf-02",
+    "path": "context/derived/uniswap__v4-periphery/audits/DRAFT_Spearbit_audit_periphery.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: v4 Periphery (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/DRAFT_Spearbit_audit_periphery.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/DRAFT_Spearbit_audit_periphery.pdf",
+        "location": "PDF pages 1–42"
+      }
+    ]
+  },
+  {
+    "id": "pdf-03",
+    "path": "context/derived/uniswap__v4-periphery/audits/OpenZeppelin_audit_margin_trading.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Uniswap Margin Trading (August 2026).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/OpenZeppelin_audit_margin_trading.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/OpenZeppelin_audit_margin_trading.pdf",
+        "location": "PDF pages 1–43"
+      }
+    ]
+  },
+  {
+    "id": "pdf-04",
+    "path": "context/derived/uniswap__v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Periphery and Universal Router (September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–28"
+      }
+    ]
+  },
+  {
+    "id": "pdf-05",
+    "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/Cantina_report_permissioned_pools.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Cantina: Permissioned Pools (August 2026).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/Cantina_report_permissioned_pools.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/permissionedPools/Cantina_report_permissioned_pools.pdf",
+        "location": "PDF pages 1–17"
+      }
+    ]
+  },
+  {
+    "id": "pdf-06",
+    "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_fix_review_report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Periphery PR #585 Review (August 2026).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_fix_review_report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_fix_review_report.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-07",
+    "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_force_exit_fix_review_report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Permissioned Pools Force-Exit Fix Review (September 2026).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_force_exit_fix_review_report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_force_exit_fix_review_report.pdf",
+        "location": "PDF pages 1–12"
+      }
+    ]
+  },
+  {
+    "id": "pdf-08",
+    "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Permissioned Pools (May 2026).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/audits/permissionedPools/OpenZeppelin_permissioned_pools_report.pdf",
+        "location": "PDF pages 1–26"
+      }
+    ]
+  },
+  {
+    "id": "pdf-09",
+    "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Morpho Labs Blue (October 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/morpho-blue/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf",
+        "location": "PDF pages 1–22"
+      }
+    ]
+  },
+  {
+    "id": "pdf-10",
+    "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/audits/2023-11-13-cantina-managed-review-draft.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Cantina: Morpho Blue (draft, November 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/audits/2023-11-13-cantina-managed-review-draft.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/morpho-blue/audits/2023-11-13-cantina-managed-review-draft.pdf",
+        "location": "PDF pages 1–29"
+      }
+    ]
+  },
+  {
+    "id": "pdf-11",
+    "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/morpho-blue-whitepaper.md",
+    "dimensions": [],
+    "description": "Morpho Blue Whitepaper (October 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/morpho-blue/morpho-blue-whitepaper.md",
+        "location": "Complete whitepaper, including figures and references"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/morpho-blue/morpho-blue-whitepaper.pdf",
+        "location": "PDF pages 1–12"
+      }
+    ]
+  },
+  {
+    "id": "pdf-12",
+    "path": "context/derived/uniswap__v4-periphery/lib/permit2/audits/ABDKAudit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/permit2/audits/ABDKAudit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/permit2/audits/ABDKAudit.pdf",
+        "location": "PDF pages 1–32"
+      }
+    ]
+  },
+  {
+    "id": "pdf-13",
+    "path": "context/derived/uniswap__v4-periphery/lib/permit2/audits/Chainsecurity Audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ChainSecurity: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/permit2/audits/Chainsecurity Audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/permit2/audits/Chainsecurity Audit.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-14",
+    "path": "context/derived/uniswap__v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Level K: OpenZeppelin v2.0 (October 2018).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.pdf",
+        "location": "PDF pages 1–34"
+      }
+    ]
+  },
+  {
+    "id": "pdf-15",
+    "path": "context/derived/uniswap__v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "pdf-16",
+    "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/ackee-blockchain-solady-report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Ackee: Solady Tokens and Utils (May 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/ackee-blockchain-solady-report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/solady/audits/ackee-blockchain-solady-report.pdf",
+        "location": "PDF pages 1–47"
+      }
+    ]
+  },
+  {
+    "id": "pdf-17",
+    "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/cantina-solady-report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Cantina: Solady (September 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/cantina-solady-report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/solady/audits/cantina-solady-report.pdf",
+        "location": "PDF pages 1–37"
+      }
+    ]
+  },
+  {
+    "id": "pdf-18",
+    "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/cantina-spearbit-coinbase-solady-report.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: Coinbase Solady (January 2025).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/cantina-spearbit-coinbase-solady-report.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/solady/audits/cantina-spearbit-coinbase-solady-report.pdf",
+        "location": "PDF pages 1–46"
+      }
+    ]
+  },
+  {
+    "id": "pdf-19",
+    "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/shung-solady-erc721-audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Shung: Solady ERC721 Security Review.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/shung-solady-erc721-audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/solady/audits/shung-solady-erc721-audit.pdf",
+        "location": "PDF pages 1–15"
+      }
+    ]
+  },
+  {
+    "id": "pdf-20",
+    "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/xuwinnie-solady-cbrt-proof.md",
+    "dimensions": [],
+    "description": "Xu Winnie: Solady cbrt and cbrtWad Proof (July 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/solady/audits/xuwinnie-solady-cbrt-proof.md",
+        "location": "Scope; Proof; Correctness of cbrt; Correctness of cbrtWad"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/solady/audits/xuwinnie-solady-cbrt-proof.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-21",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/ABDK_Uniswap_UniversalRouter_v_2_0.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: Universal Router v2.0.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/ABDK_Uniswap_UniversalRouter_v_2_0.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/ABDK_Uniswap_UniversalRouter_v_2_0.pdf",
+        "location": "PDF pages 1–45"
+      }
+    ]
+  },
+  {
+    "id": "pdf-22",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/DRAFT_ABDK_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: v4 Periphery and Universal Router (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/DRAFT_ABDK_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/DRAFT_ABDK_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–45"
+      }
+    ]
+  },
+  {
+    "id": "pdf-23",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/DRAFT_Spearbit_audit_UR.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: v4 Universal Router (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/DRAFT_Spearbit_audit_UR.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/DRAFT_Spearbit_audit_UR.pdf",
+        "location": "PDF pages 1–7"
+      }
+    ]
+  },
+  {
+    "id": "pdf-24",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/OpenZeppelin_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Periphery and Universal Router (September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/OpenZeppelin_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/OpenZeppelin_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–28"
+      }
+    ]
+  },
+  {
+    "id": "pdf-25",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/Universal Router 2.1 And V4 Periphery Audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Universal Router 2.1 and v4 Periphery (November 2025).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/audit/Universal Router 2.1 And V4 Periphery Audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/audit/Universal Router 2.1 And V4 Periphery Audit.pdf",
+        "location": "PDF pages 1–8"
+      }
+    ]
+  },
+  {
+    "id": "pdf-26",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/ABDKAudit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/ABDKAudit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/ABDKAudit.pdf",
+        "location": "PDF pages 1–32"
+      }
+    ]
+  },
+  {
+    "id": "pdf-27",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/Chainsecurity Audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ChainSecurity: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/Chainsecurity Audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/permit2/audits/Chainsecurity Audit.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-28",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Level K: OpenZeppelin v2.0 (October 2018).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.pdf",
+        "location": "PDF pages 1–34"
+      }
+    ]
+  },
+  {
+    "id": "pdf-29",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "pdf-30",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "pdf-31",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: v4 Periphery and Universal Router (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–45"
+      }
+    ]
+  },
+  {
+    "id": "pdf-32",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_Spearbit_audit_periphery.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: v4 Periphery (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_Spearbit_audit_periphery.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/DRAFT_Spearbit_audit_periphery.pdf",
+        "location": "PDF pages 1–42"
+      }
+    ]
+  },
+  {
+    "id": "pdf-33",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Periphery and Universal Router (September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/audits/OpenZeppelin_audit_periphery_universal_router.pdf",
+        "location": "PDF pages 1–28"
+      }
+    ]
+  },
+  {
+    "id": "pdf-34",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/ABDKAudit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/ABDKAudit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/ABDKAudit.pdf",
+        "location": "PDF pages 1–32"
+      }
+    ]
+  },
+  {
+    "id": "pdf-35",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/Chainsecurity Audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ChainSecurity: Permit2 (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/Chainsecurity Audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/audits/Chainsecurity Audit.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-36",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Level K: OpenZeppelin v2.0 (October 2018).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/openzeppelin-contracts/audit/2018-10.pdf",
+        "location": "PDF pages 1–34"
+      }
+    ]
+  },
+  {
+    "id": "pdf-37",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/permit2/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "pdf-38",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Known Effects of Hook Permissions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.md",
+        "location": "Hooks without Custom Accounting; Custom Accounting Hooks"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-39",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: v4 Core (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.pdf",
+        "location": "PDF pages 1–75"
+      }
+    ]
+  },
+  {
+    "id": "pdf-40",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: v4 Core Security Assessment and Formal Verification (draft, July 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.pdf",
+        "location": "PDF pages 1–30"
+      }
+    ]
+  },
+  {
+    "id": "pdf-41",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: v4 Core (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.pdf",
+        "location": "PDF pages 1–42"
+      }
+    ]
+  },
+  {
+    "id": "pdf-42",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Core (July 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.pdf",
+        "location": "PDF pages 1–25"
+      }
+    ]
+  },
+  {
+    "id": "pdf-43",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Trail of Bits: v4 Core Security Assessment.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.pdf",
+        "location": "PDF pages 1–64"
+      }
+    ]
+  },
+  {
+    "id": "pdf-44",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.md",
+    "dimensions": [],
+    "description": "Uniswap v4 Core Whitepaper (June 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.md",
+        "location": "Complete whitepaper, including figures and references"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-45",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.md",
+    "dimensions": [],
+    "description": "Uniswap v4 Core Whitepaper, Chinese translation (June 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.md",
+        "location": "Complete whitepaper, including figures and references"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-46",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Level K: OpenZeppelin v2.0 (October 2018).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.pdf",
+        "location": "PDF pages 1–34"
+      }
+    ]
+  },
+  {
+    "id": "pdf-47",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Checkpoints Library (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf",
+        "location": "PDF pages 1–9"
+      }
+    ]
+  },
+  {
+    "id": "pdf-48",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: ERC4626 Tokenized Vault (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-49",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Contracts 4.9 Release (May 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf",
+        "location": "PDF pages 1–25"
+      }
+    ]
+  },
+  {
+    "id": "pdf-50",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Contracts 5.0 Release (October 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf",
+        "location": "PDF pages 1–80"
+      }
+    ]
+  },
+  {
+    "id": "pdf-51",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Governance Formal Verification (October–November 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.pdf",
+        "location": "PDF pages 1–11"
+      }
+    ]
+  },
+  {
+    "id": "pdf-52",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Formal Verification (March–April 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.pdf",
+        "location": "PDF pages 1–35"
+      }
+    ]
+  },
+  {
+    "id": "pdf-53",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Formal Verification (May–June 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.pdf",
+        "location": "PDF pages 1–13"
+      }
+    ]
+  },
+  {
+    "id": "pdf-54",
+    "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "pdf-55",
+    "path": "context/derived/uniswap__v4-periphery/lib/v3-core/audits/abdk/audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: Uniswap v3 Core.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v3-core/audits/abdk/audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v3-core/audits/abdk/audit.pdf",
+        "location": "PDF pages 1–81"
+      }
+    ]
+  },
+  {
+    "id": "pdf-56",
+    "path": "context/derived/uniswap__v4-periphery/lib/v3-core/audits/tob/audit.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Trail of Bits: Uniswap v3 Core (March 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v3-core/audits/tob/audit.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v3-core/audits/tob/audit.pdf",
+        "location": "PDF pages 1–63"
+      }
+    ]
+  },
+  {
+    "id": "pdf-57",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Known Effects of Hook Permissions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.md",
+        "location": "Hooks without Custom Accounting; Custom Accounting Hooks"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/Known_Effects_of_Hook_Permissions.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-58",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "ABDK: v4 Core (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_ABDK_audit_core.pdf",
+        "location": "PDF pages 1–75"
+      }
+    ]
+  },
+  {
+    "id": "pdf-59",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: v4 Core Security Assessment and Formal Verification (draft, July 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Certora_audit_core.pdf",
+        "location": "PDF pages 1–30"
+      }
+    ]
+  },
+  {
+    "id": "pdf-60",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Spearbit: v4 Core (draft, September 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/audits/DRAFT_Spearbit_audit_core.pdf",
+        "location": "PDF pages 1–42"
+      }
+    ]
+  },
+  {
+    "id": "pdf-61",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: v4 Core (July 2024).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/audits/OpenZeppelin_audit_core.pdf",
+        "location": "PDF pages 1–25"
+      }
+    ]
+  },
+  {
+    "id": "pdf-62",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Trail of Bits: v4 Core Security Assessment.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.pdf",
+        "location": "PDF pages 1–64"
+      }
+    ]
+  },
+  {
+    "id": "pdf-63",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.md",
+    "dimensions": [],
+    "description": "Uniswap v4 Core Whitepaper (June 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.md",
+        "location": "Complete whitepaper, including figures and references"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-64",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.md",
+    "dimensions": [],
+    "description": "Uniswap v4 Core Whitepaper, Chinese translation (June 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.md",
+        "location": "Complete whitepaper, including figures and references"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf",
+        "location": "PDF pages 1–4"
+      }
+    ]
+  },
+  {
+    "id": "pdf-65",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Level K: OpenZeppelin v2.0 (October 2018).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2018-10.pdf",
+        "location": "PDF pages 1–34"
+      }
+    ]
+  },
+  {
+    "id": "pdf-66",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Checkpoints Library (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf",
+        "location": "PDF pages 1–9"
+      }
+    ]
+  },
+  {
+    "id": "pdf-67",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: ERC4626 Tokenized Vault (November 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf",
+        "location": "PDF pages 1–14"
+      }
+    ]
+  },
+  {
+    "id": "pdf-68",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Contracts 4.9 Release (May 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf",
+        "location": "PDF pages 1–25"
+      }
+    ]
+  },
+  {
+    "id": "pdf-69",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "OpenZeppelin: Contracts 5.0 Release (October 2023).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf",
+        "location": "PDF pages 1–80"
+      }
+    ]
+  },
+  {
+    "id": "pdf-70",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Governance Formal Verification (October–November 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2021-10.pdf",
+        "location": "PDF pages 1–11"
+      }
+    ]
+  },
+  {
+    "id": "pdf-71",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Formal Verification (March–April 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-03.pdf",
+        "location": "PDF pages 1–35"
+      }
+    ]
+  },
+  {
+    "id": "pdf-72",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Certora: OpenZeppelin Formal Verification (May–June 2022).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/openzeppelin-contracts/certora/reports/2022-05.pdf",
+        "location": "PDF pages 1–13"
+      }
+    ]
+  },
+  {
+    "id": "pdf-73",
+    "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+    "dimensions": [
+      "known"
+    ],
+    "description": "Fixed Point Solutions: Solmate Library (December 2021).",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "context/derived/uniswap__v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.md",
+        "location": "Scope, findings, per-finding responses and resolution or fix-review notes; complete report"
+      },
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/lib/solmate/audits/v6-Fixed-Point-Solutions.pdf",
+        "location": "PDF pages 1–10"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-02",
+    "path": "uniswap__v4-periphery/src/AaveLendingAdapter.sol",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "AaveLendingAdapter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/AaveLendingAdapter.sol",
+        "location": "Lines 19–55, 87–88, 224–235; statement IDs S108, S109, S110"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-03",
+    "path": "uniswap__v4-periphery/src/AaveV4LendingAdapter.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "AaveV4LendingAdapter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/AaveV4LendingAdapter.sol",
+        "location": "Lines 17–64; statement IDs S111"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-04",
+    "path": "uniswap__v4-periphery/src/CompoundV3LendingAdapter.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "CompoundV3LendingAdapter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/CompoundV3LendingAdapter.sol",
+        "location": "Lines 17–62; statement IDs S112"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-05",
+    "path": "uniswap__v4-periphery/src/MarginAccount.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "MarginAccount.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/MarginAccount.sol",
+        "location": "Lines 17–37, 90–95; statement IDs S113, S114"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-06",
+    "path": "uniswap__v4-periphery/src/MarginAccountFactory.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "MarginAccountFactory.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/MarginAccountFactory.sol",
+        "location": "Lines 22, 68–71; statement IDs S115, S116"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-07",
+    "path": "uniswap__v4-periphery/src/MarginRouter.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "MarginRouter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/MarginRouter.sol",
+        "location": "Lines 34–58, 104–107, 164–166, 225–228, 344, 346–349, 519–520, 529–532, 579–583, 600–602, 614–619, 675–682, 746, 778–780; statement IDs S117, S118, S119, S120, S121, S122, S123, S124, S125, S126, S127, S128, S129, S130"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-08",
+    "path": "uniswap__v4-periphery/src/MorphoLendingAdapter.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "MorphoLendingAdapter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/MorphoLendingAdapter.sol",
+        "location": "Lines 20–36; statement IDs S131"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-09",
+    "path": "uniswap__v4-periphery/src/interfaces/IAmountResolver.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "IAmountResolver.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/interfaces/IAmountResolver.sol",
+        "location": "Lines 4–16; statement IDs S132"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-10",
+    "path": "uniswap__v4-periphery/src/interfaces/ILendingAdapter.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "ILendingAdapter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/interfaces/ILendingAdapter.sol",
+        "location": "Lines 11–32, 34–39, 88–95; statement IDs S133, S134, S135"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-11",
+    "path": "uniswap__v4-periphery/src/interfaces/IMarginAccount.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "IMarginAccount.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/interfaces/IMarginAccount.sol",
+        "location": "Lines 9–15, 20–24, 85–87, 145–151; statement IDs S136, S137, S138, S139"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-12",
+    "path": "uniswap__v4-periphery/src/interfaces/IMarginRouter.sol",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "IMarginRouter.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/interfaces/IMarginRouter.sol",
+        "location": "Lines 13–23, 49–51, 77–82, 210–235, 253–290, 305–345, 391–399, 417–463, 466–472; statement IDs S140, S141, S142, S143, S144, S145, S146, S147, S148"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-13",
+    "path": "uniswap__v4-periphery/src/libraries/MarginActions.sol",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "MarginActions.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/libraries/MarginActions.sol",
+        "location": "Lines 4–18, 45–47, 49–54; statement IDs S149, S150, S151"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-14",
+    "path": "uniswap__v4-periphery/src/libraries/MarginCalldataDecoder.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "MarginCalldataDecoder.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/libraries/MarginCalldataDecoder.sol",
+        "location": "Lines 10–15; statement IDs S152"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-15",
+    "path": "uniswap__v4-periphery/src/libraries/TransientPlanState.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "TransientPlanState.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/libraries/TransientPlanState.sol",
+        "location": "Lines 4–10; statement IDs S153"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-16",
+    "path": "uniswap__v4-periphery/src/types/PositionData.sol",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "PositionData.sol implementation or interface with NatSpec and code comments.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/src/types/PositionData.sol",
+        "location": "Lines 6–22; statement IDs S154"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-17",
+    "path": "uniswap__v4-periphery/CONTRIBUTING.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Repository contribution and development conventions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/CONTRIBUTING.md",
+        "location": "Lines 13; statement IDs S155"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-18",
+    "path": "uniswap__v4-periphery/docs/margin-trading.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Margin-trading integration guide, venue behavior, deployment registry and event reference.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/docs/margin-trading.md",
+        "location": "Lines 21, 23–29, 112–118, 136–143, 144–145, 146–149, 157–171, 214–220, 299–302, 303–305, 306–308, 309–311, 323–333, 335–339, 629, 866–875, 944–949, 1077–1078, 1079–1088, 1089–1096, 1097–1099, 1100–1105, 1106–1108, 1112–1114, 1115, 1116–1119, 1157–1163, 1165–1171, 1249, 1330–1333; statement IDs S156, S157, S158, S159, S160, S161, S162, S163, S164, S165, S166, S167, S168, S169, S170, S171, S172, S173, S174, S175, S176, S177, S178, S179, S180, S181, S182, S183, S184, S185"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-20",
+    "path": "uniswap__v4-periphery/lib/universal-router/.claude/prompts/claude-pr-review.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Universal Router repository pull-request review prompt.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/.claude/prompts/claude-pr-review.md",
+        "location": "Lines 25, 31, 32, 33, 79, 80, 102, 104, 173, 174, 175; statement IDs S207, S208, S209, S210, S211, S212, S213, S214, S215, S216, S217"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-21",
+    "path": "uniswap__v4-periphery/lib/universal-router/contracts/deploy/CLAUDE.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Universal Router repository directory guide.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/contracts/deploy/CLAUDE.md",
+        "location": "Lines 9; statement IDs S218"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-22",
+    "path": "uniswap__v4-periphery/lib/universal-router/deploy-addresses/CLAUDE.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Universal Router repository directory guide.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/deploy-addresses/CLAUDE.md",
+        "location": "Lines 33; statement IDs S219"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-24",
+    "path": "uniswap__v4-periphery/lib/universal-router/lib/v3-periphery/bug-bounty.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Repository bug-bounty documentation and assumptions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v3-periphery/bug-bounty.md",
+        "location": "Lines 24, 25, 26, 35, 36, 37; statement IDs S240, S241, S242, S243, S244, S245"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-25",
+    "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/CONTRIBUTING.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Repository contribution and development conventions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/CONTRIBUTING.md",
+        "location": "Lines 13, 41, 43; statement IDs S246, S247, S248"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-27",
+    "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/CONTRIBUTING.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Repository contribution and development conventions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/universal-router/lib/v4-periphery/lib/v4-core/CONTRIBUTING.md",
+        "location": "Lines 13, 42, 44; statement IDs S270, S271, S272"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-29",
+    "path": "uniswap__v4-periphery/lib/v3-core/bug-bounty.md",
+    "dimensions": [
+      "tf",
+      "known"
+    ],
+    "description": "Repository bug-bounty documentation and assumptions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/v3-core/bug-bounty.md",
+        "location": "Lines 23, 24, 25, 34, 35, 36; statement IDs S292, S293, S294, S295, S296, S297"
+      }
+    ]
+  },
+  {
+    "id": "repo-reference-30",
+    "path": "uniswap__v4-periphery/lib/v4-core/CONTRIBUTING.md",
+    "dimensions": [
+      "tf"
+    ],
+    "description": "Repository contribution and development conventions.",
+    "written_for_engagement": false,
+    "level": "repo",
+    "visibility": "participants",
+    "sources": [
+      {
+        "path": "uniswap__v4-periphery/lib/v4-core/CONTRIBUTING.md",
+        "location": "Lines 13, 42; statement IDs S298, S299"
+      }
+    ]
+  }
+]

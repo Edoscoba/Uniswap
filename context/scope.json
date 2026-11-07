@@ -1,0 +1,803 @@
+{
+  "analysis_id": "2b20ab34-b719-41da-b818-211cc2488b98",
+  "codebases": [
+    {
+      "branch": "main",
+      "commit_sha": "1c86348d3fa3f91660b2c75b325807cb12872caf",
+      "directory": "uniswap__v4-periphery",
+      "id": "5a62ba5e-8d6b-4ac1-8e32-062ff273da7d",
+      "in_scope_files": [
+        "src/AaveLendingAdapter.sol",
+        "src/AaveV4LendingAdapter.sol",
+        "src/CompoundV3LendingAdapter.sol",
+        "src/MarginAccount.sol",
+        "src/MarginAccountFactory.sol",
+        "src/MarginRouter.sol",
+        "src/MorphoLendingAdapter.sol",
+        "src/base/PositionAmountResolver.sol",
+        "src/libraries/MarginActions.sol",
+        "src/libraries/MarginCalldataDecoder.sol",
+        "src/libraries/TransientPlanState.sol",
+        "src/libraries/Units.sol",
+        "src/types/Call.sol",
+        "src/types/Ltv.sol",
+        "src/types/Market.sol",
+        "src/types/PositionData.sol",
+        "src/interfaces/IAmountResolver.sol",
+        "src/interfaces/ILendingAdapter.sol",
+        "src/interfaces/IMarginAccount.sol",
+        "src/interfaces/IMarginRouter.sol"
+      ],
+      "pull_request": {
+        "changed_files": [
+          {
+            "added": false,
+            "additions": 11,
+            "deletions": 1,
+            "path": ".github/workflows/test.yml",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 4,
+            "deletions": 0,
+            "path": ".gitignore",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 18,
+            "deletions": 0,
+            "path": ".gitmodules",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 0,
+            "deletions": 0,
+            "path": "audits/OpenZeppelin_audit_margin_trading.pdf",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1336,
+            "deletions": 0,
+            "path": "docs/margin-trading.md",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 33,
+            "deletions": 0,
+            "path": "foundry.lock",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 9,
+            "deletions": 2,
+            "path": "foundry.toml",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/forge-std",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/morpho-blue",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/solady",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/universal-router",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/v2-core",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 1,
+            "deletions": 0,
+            "path": "lib/v3-core",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 6,
+            "deletions": 1,
+            "path": "remappings.txt",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 164,
+            "deletions": 0,
+            "path": "script/DeployMargin.s.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 72,
+            "deletions": 0,
+            "path": "script/MarginDeployConfig.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 85,
+            "deletions": 0,
+            "path": "script/MineMarginRouterSalt.s.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 492,
+            "deletions": 0,
+            "path": "script/OpenMorphoLongEth.s.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 139,
+            "deletions": 0,
+            "path": "script/RemoveExcessCollateral.s.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 14,
+            "deletions": 0,
+            "path": "script/URCompileAnchor.s.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 3,
+            "deletions": 0,
+            "path": "snapshots/MarginAccountFactoryTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 4,
+            "deletions": 0,
+            "path": "snapshots/MarginAccountTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 4,
+            "deletions": 0,
+            "path": "snapshots/MarginRouterExecuteNativeTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 5,
+            "deletions": 0,
+            "path": "snapshots/MarginRouterExecuteTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 6,
+            "deletions": 0,
+            "path": "snapshots/MarginRouterIntegrationTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 3,
+            "deletions": 0,
+            "path": "snapshots/MarginRouterNativeTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 5,
+            "deletions": 0,
+            "path": "snapshots/MarginRouterShortInverseTest.json",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 309,
+            "deletions": 0,
+            "path": "src/AaveLendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 319,
+            "deletions": 0,
+            "path": "src/AaveV4LendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 333,
+            "deletions": 0,
+            "path": "src/CompoundV3LendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 214,
+            "deletions": 0,
+            "path": "src/MarginAccount.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 85,
+            "deletions": 0,
+            "path": "src/MarginAccountFactory.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 815,
+            "deletions": 0,
+            "path": "src/MarginRouter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 268,
+            "deletions": 0,
+            "path": "src/MorphoLendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 3,
+            "deletions": 1,
+            "path": "src/V4Router.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 48,
+            "deletions": 0,
+            "path": "src/base/PositionAmountResolver.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 23,
+            "deletions": 0,
+            "path": "src/interfaces/IAmountResolver.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 170,
+            "deletions": 0,
+            "path": "src/interfaces/ILendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 153,
+            "deletions": 0,
+            "path": "src/interfaces/IMarginAccount.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 474,
+            "deletions": 0,
+            "path": "src/interfaces/IMarginRouter.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 4,
+            "deletions": 0,
+            "path": "src/interfaces/IPermit2Forwarder.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 36,
+            "deletions": 4,
+            "path": "src/interfaces/IV4Router.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 23,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave-v4/IAaveOracle.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 185,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave-v4/ISpoke.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 12,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave/IAaveOracle.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 73,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave/IPool.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 19,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave/IPoolAddressesProvider.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 46,
+            "deletions": 0,
+            "path": "src/interfaces/external/aave/IPoolDataProvider.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 81,
+            "deletions": 0,
+            "path": "src/interfaces/external/compound-v3/IComet.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 94,
+            "deletions": 0,
+            "path": "src/libraries/MarginActions.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 110,
+            "deletions": 0,
+            "path": "src/libraries/MarginCalldataDecoder.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 51,
+            "deletions": 0,
+            "path": "src/libraries/TransientPlanState.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 13,
+            "deletions": 0,
+            "path": "src/libraries/Units.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 17,
+            "deletions": 0,
+            "path": "src/types/Call.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 26,
+            "deletions": 0,
+            "path": "src/types/Ltv.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 26,
+            "deletions": 0,
+            "path": "src/types/Market.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 29,
+            "deletions": 0,
+            "path": "src/types/PositionData.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 10,
+            "deletions": 1,
+            "path": "test/UniswapV4DeployerCompetition.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 84,
+            "deletions": 0,
+            "path": "test/deploy/DeployMarginSaltFlow.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 401,
+            "deletions": 0,
+            "path": "test/fork/AaveLendingAdapter.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 404,
+            "deletions": 0,
+            "path": "test/fork/AaveV4LendingAdapter.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 323,
+            "deletions": 0,
+            "path": "test/fork/CompoundV3LendingAdapter.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 510,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterCrossVenueHedge.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 589,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterE2E.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 359,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterExecute.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 480,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterHedge.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 162,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterRouteSwap.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 525,
+            "deletions": 0,
+            "path": "test/fork/MarginRouterSameSubIdHedge.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 157,
+            "deletions": 0,
+            "path": "test/fork/MorphoLendingAdapter.fork.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 684,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterExecute.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 112,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterExecuteNative.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 867,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterIntegration.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 78,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterNative.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 149,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterNoWeth9.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 84,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterPermit2.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 168,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterRouteSwapResidual.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 347,
+            "deletions": 0,
+            "path": "test/integration/MarginRouterShortInverse.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 442,
+            "deletions": 0,
+            "path": "test/invariant/MarginRouterHandler.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 268,
+            "deletions": 0,
+            "path": "test/invariant/MarginRouterInvariant.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 414,
+            "deletions": 0,
+            "path": "test/lending/AaveLendingAdapter.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 317,
+            "deletions": 0,
+            "path": "test/lending/AaveLendingAdapterFuzz.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 493,
+            "deletions": 0,
+            "path": "test/lending/AaveV4LendingAdapter.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 362,
+            "deletions": 0,
+            "path": "test/lending/AaveV4LendingAdapterFuzz.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 79,
+            "deletions": 0,
+            "path": "test/lending/CompoundV3DustDivisionByZero.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 341,
+            "deletions": 0,
+            "path": "test/lending/CompoundV3LendingAdapter.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 355,
+            "deletions": 0,
+            "path": "test/lending/MorphoLendingAdapter.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 337,
+            "deletions": 0,
+            "path": "test/lending/MorphoLendingAdapterFuzz.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 125,
+            "deletions": 0,
+            "path": "test/lending/PositionAmountResolver.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 186,
+            "deletions": 0,
+            "path": "test/libraries/MarginCalldataDecoder.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 275,
+            "deletions": 0,
+            "path": "test/marginAccount/MarginAccount.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 76,
+            "deletions": 0,
+            "path": "test/marginAccount/MarginAccountFactory.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 202,
+            "deletions": 0,
+            "path": "test/marginRouter/MarginRouter.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 653,
+            "deletions": 0,
+            "path": "test/marginRouter/MarginRouterExactOutputFuzz.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 167,
+            "deletions": 0,
+            "path": "test/marginRouter/MarginRouterExactOutputShortFill.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 261,
+            "deletions": 0,
+            "path": "test/mocks/MockAavePool.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 229,
+            "deletions": 0,
+            "path": "test/mocks/MockAaveV4Spoke.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 126,
+            "deletions": 0,
+            "path": "test/mocks/MockComet.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 146,
+            "deletions": 0,
+            "path": "test/mocks/MockLendingAdapter.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 83,
+            "deletions": 0,
+            "path": "test/mocks/MockLendingProtocol.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 60,
+            "deletions": 0,
+            "path": "test/mocks/MockMorpho.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 2,
+            "deletions": 4,
+            "path": "test/position-managers/FeeCollection.t.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 16,
+            "deletions": 32,
+            "path": "test/position-managers/NativeToken.t.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 7,
+            "deletions": 1,
+            "path": "test/position-managers/PositionManager.modifyLiquidities.t.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 14,
+            "deletions": 19,
+            "path": "test/position-managers/PositionManager.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 120,
+            "deletions": 0,
+            "path": "test/shared/MarginRouteHelpers.sol",
+            "removed": false
+          },
+          {
+            "added": false,
+            "additions": 72,
+            "deletions": 0,
+            "path": "test/shared/fuzz/LiquidityFuzzers.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 24,
+            "deletions": 0,
+            "path": "test/types/Ltv.t.sol",
+            "removed": false
+          },
+          {
+            "added": true,
+            "additions": 49,
+            "deletions": 0,
+            "path": "test/types/LtvFuzz.t.sol",
+            "removed": false
+          }
+        ],
+        "description": "# Margin Trading Periphery\n\nAdds a periphery that opens leveraged spot positions in a single transaction by composing a swap with a borrow/supply against an external lending protocol. **Four venues are integrated behind one router: Morpho Blue, Aave v3, Aave v4, and Compound v3**; the caller selects the venue per call by passing the matching adapter. The whole leverage loop runs inside one `PoolManager` unlock using v4 flash accounting, so it nets to zero with no intermediate capital and no router-held residual.\n\nFull protocol and integration guide: [`docs/margin-trading.md`](docs/margin-trading.md).\n\n## What a position is\n\nBorrow the debt token, swap it into the collateral token (exact-output), supply the collateral (equity plus the bought amount), and draw the debt back to settle the swap. The result is a position **long the collateral and short the debt**, at a caller-chosen leverage bounded by the market's max LTV. Direction is set entirely by the `(collateral, debt)` pairing; there is no separate flag. Live markets today: long ETH (WETH/USDC on Morpho or Aave), short ETH (USDC/WETH on Morpho, Aave v3, or Aave v4), and long UNI (UNI/USDC on Compound v3).\n\n## Routed swaps\n\nPosition swaps route through the **Universal Router** (the `ROUTE_SWAP` action), so a route can source liquidity across v2, v3, and v4 rather than a single v4 pool. The UR self-settles its own swap, so the router wraps the call in a flash-take envelope: it flash-takes the input from the PoolManager, funds the UR through a Permit2 allowance scoped to exactly the input cap (and zeroed after the swap, so no spendable allowance outlives the call), runs the caller-built route, and settles only this call's unspent take. The Universal Router is a **per-call parameter** (in `IncreaseParams`/`DecreaseParams`, or the first `ROUTE_SWAP` field in a plan), so callers can adopt newer UR deployments without a router redeploy.\n\nThe router does not trust the route's internals. Fills are all-or-nothing: the curated flows set the `ASSERT_ACCOUNT_BALANCE` threshold to the account's pre-unlock balance plus the amount the route must deliver, so the absolute check enforces the swap **delta** and a pre-existing or donated balance cannot mask a short fill (`IncompleteFill`).\n\n## Architecture\n\n| Contract | Role |\n|----------|------|\n| `MarginRouter` | Entry point and orchestrator. Builds each flow as a v4 action plan run inside one unlock. Inherits `V4Router`, `ReentrancyLock`, `Permit2Forwarder`, `Multicall_v4`, `NativeWrapper`, and the account factory. Is the trusted manager of every account. |\n| `MarginAccount` | Per-user position container, a Solady clone-with-immutable-args. It is the lending counterparty (`onBehalf == account`), so it acts as itself with no delegated authorization. Owner and manager are baked into bytecode (soulbound: no initializer, no transfer). Borrowed and withdrawn funds are delivered to the account and forwarded to the validated receiver (measure-and-forward), so venues that lack a receiver argument are handled uniformly. |\n| `MarginAccountFactory` | Deterministic, idempotent, permissionless account deployment (the owner is salt-bound, so a third-party deploy cannot change who owns an account). An abstract mixin inherited by the router, so the router is the manager of every account it deploys. |\n| `MorphoLendingAdapter` | Singleton encoder over a governed `(collateral, debt) -> MarketParams` routing table (Morpho Blue). |\n| `AaveLendingAdapter` | Singleton encoder over the Aave v3 Pool. Governed `(collateral, debt)` allowlist; the Pool (a stable proxy) is stored immutably, while the protocol data provider is re-resolved from the addresses provider on each use because Aave can repoint it. |\n| `AaveV4LendingAdapter` | Singleton encoder over a single Aave v4 **Spoke** (hub-and-spoke). Governed `(collateral, debt) -> (collateralReserveId, debtReserveId)` routes, validated onchain at registration; reads premium-inclusive debt. |\n| `CompoundV3LendingAdapter` | Singleton encoder over a single Compound v3 **Comet**. Single-base: the Comet's base token is the only borrowable debt; borrow/repay map onto base `withdraw`/`supply`. The base price feed is read live (it is governance-mutable behind the Comet proxy). |\n| `ILendingAdapter` / `IMarginAccount` / `IMarginRouter` | Public surfaces; new lending venues are added behind new adapters with no router or account changes. |\n| Value types | `Market` (the pair), `Ltv` (WAD ratio), `MarketRegistry`, `MarketAllowlist`, `Owner`, `PositionData`. |\n\nAdapters are encoders: each returns the `(target, value, callData)` the account executes and holds no funds. The encode surface is `encodeSupplyCollateral`, `encodeEnableCollateral` (run by the account after every supply, for venues needing an explicit collateral enable; empty calldata is the skip signal), `encodeWithdrawCollateral`, `encodeBorrow`, and `encodeRepay`.\n\nEntry points: `increasePosition` (opens or adds leverage; payable, equity via Permit2 or native ETH), `decreasePosition` (partial delever or full close via the `type(uint256).max` sentinel), `addCollateral`, and `execute`, the advanced entrypoint that runs an arbitrary caller-composed plan of the same actions (see the guide's section 4.1 for the composition contract). Plus `createAccount`/`accountOf` and the governance surface.\n\n## Key design decisions\n\n- **Soulbound, self-custodial accounts.** Owner and manager are immutable; only the manager (router) or owner can move funds, and only to the manager or owner. An owner-only `execute` escape hatch on the account lets the owner always act directly on the lending protocol, so funds can never be trapped by router or adapter configuration.\n- **Venue-agnostic via adapters.** The router and account speak only `ILendingAdapter`. Four venues ship today; the same audited router/account served each new venue unchanged.\n- **Uniform venue semantics at the edges.** Collateral enabling is an explicit post-supply hook on every venue (Aave v3/v4 encode their enable calls; Morpho/Compound skip), which also immunizes supplies against Aave's first-supply auto-enable gap. A debt-free repay encodes an empty no-op on every venue, so a generic repay-then-withdraw exit plan always runs.\n- **Allowlist gates exposure-increasing flows only.** Supply and borrow require an allowlisted adapter; withdraw, repay, and sweep never do, so a position is always exitable even after its adapter is disallowed.\n- **Slippage and fill protection.** Mandatory absolute input caps (`maxDebtIn`/`maxCollateralIn`) are the binding protection; `minHopPriceX36` is an optional per-hop bound priced on the swap's realized output; fills are all-or-nothing via the delta-threshold fill check. A partial decrease requires live debt and gates on the **measured** repay carried out of the unlock, so a mid-transaction external repay cannot turn it into a silent no-op (`NoDebtToRepay`).\n- **Events are indexer-first and never block funds.** Every position mutation on every router path emits a `PositionUpdated` resulting-state snapshot; the curated flows add richer delta events. All event-only reads are best-effort: an oracle revert or a mid-transaction state change can skip or zero an event field but can never roll back a completed mutation.\n- **Margin opcodes occupy a distinct `0x30` range** (`0x1c`-`0x2f` stays reserved for future core v4 actions), and undefined opcodes revert `UnsupportedAction` regardless of plan state.\n- **ERC-20-only markets** (no fee-on-transfer / rebasing); every flow nets to zero under that constraint.\n- **Two-step, zero-address-guarded ownership** for router governance and adapter ownership, with lifecycle events at construction, proposal, and acceptance.\n\n## Indexer\n\n`indexer/` ships a Ponder app that reconstructs positions, actions, and PnL from the router's event surface, with a venue truth layer (Morpho and Aave v3 flows and liquidations) for activity the router cannot see (escape-hatch operations, liquidations). Pool attribution parses each margin transaction's receipt for v4 `Swap` logs, so it is correct for any Universal Router the route names; liquidation terminality is decided from the venue's live debt, not stored state. GraphQL and SQL-over-HTTP included.\n\n## Security review and audit\n\nAn internal 8-agent adversarial review of the router/account core preceded the external engagement; its findings (opaque zero-amount reverts, balance-based residuals, exit gating, ownership hardening, realized-output price guards, all-or-nothing fills) were fixed in this branch.\n\n**OpenZeppelin audited the full margin suite (Jul 28 - Aug 12, 2026): 33 findings, no High or Critical.** 3 Medium (two reclassified to Low by the auditors after review), 14 Low, 16 Notes. Every finding is either fixed in this branch with regression tests or acknowledged with documented reasoning; the report is committed at [`audits/OpenZeppelin_audit_margin_trading.pdf`](audits/OpenZeppelin_audit_margin_trading.pdf). Highlights of the fix set:\n\n| Area | Hardening |\n|---|---|\n| Routed-swap fill check (M-03) | Threshold enforces the swap delta, so pre-existing balances cannot mask a short fill |\n| Aave collateral enabling (M-02) | Explicit `encodeEnableCollateral` post-supply hook on all venues; immune to dust-aToken griefing |\n| Aave data provider (M-01) | Re-resolved on each use instead of cached (Aave can repoint it) |\n| Morpho boundary repays (L-01) | Exact-debt and debt-free repays no longer underflow; partial decreases gate on the measured repay |\n| Event reads (L-05) | Best-effort with saturated deltas; a reverting read or hostile-route state change never rolls back a mutation |\n| ROUTE_SWAP allowances (L-08) | The scoped Permit2 allowance to the caller-named UR is zeroed after the swap |\n| Comet base price feed (L-14) | Read live per valuation instead of cached |\n| Observability (N-12 and others) | Owner-lifecycle events, `PositionUpdated` on every path, documented per-venue event field semantics |\n\nA follow-up Codex review of the indexer surfaced three findings (swap-sender filtering, liquidation terminality, requested-vs-measured repay deltas), all fixed and verified against live mainnet data.\n\n## Testing\n\nUnit and fuzz suites for all four adapters, the account, the factory, the value types, and the router; margin integration tests against a real local PoolManager (Permit2 and native-ETH equity, short fills, event-read failure modes, mid-transaction interference); a stateful invariant suite for router/account accounting; and mainnet-fork lifecycle tests per venue (Morpho e2e and multi-borrower, Aave v3, Aave v4, Compound v3) plus hedging (cross-venue, same-venue, shared-account via `subId`), `execute` plans, and routed swaps. Gas snapshots are committed in isolate mode.\n\n## Deployment\n\nThe suite is **live on mainnet** (2026-08-12 redeploy): `MarginRouter` at `0x000000000075e82F7B7DdC5DD1B4984b560eF5D4` (mined vanity, CREATE2), with the four adapters allowlisted and the canonical markets registered. The full address registry, with provenance, is in the guide's section 10 and `indexer/addresses.ts`. Governance is currently the deploy key and should be handed to the timelock or a multisig via the two-step transfer before broader rollout.\n\n## New dependencies\n\nAdds the `morpho-blue` and `solady` submodules. Aave v3, Aave v4, and Compound v3 are integrated via minimal vendored interfaces under `src/interfaces/external/` (no new submodules); the Universal Router dependency was already vendored.\n",
+        "head_sha": "1c86348d3fa3f91660b2c75b325807cb12872caf",
+        "merge_base_sha": "c6e4754dab11bd38c6f08ac51c3c868569e93d64",
+        "number": 563,
+        "target_branch": "main",
+        "title": "feat: add margin trading periphery",
+        "url": "https://github.com/uniswap/v4-periphery/pull/563"
+      },
+      "repo_name": "uniswap/v4-periphery"
+    }
+  ],
+  "mode": "pinned",
+  "version": 2
+}
